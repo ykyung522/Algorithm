@@ -21,6 +21,11 @@ jobs: # 실제 실행될 내용
       run: |
         python -m pip install --upgrade pip
         pip install python-leetcode 
+
+    - name: Check working directory # 현재 디렉토리 출력 (디버깅)
+      run: |
+        pwd
+        ls -R
     - name: Run update.py # 2) update.py 실행
       run: |
         python ../../update.py
