@@ -34,7 +34,7 @@ jobs:
 
     - name: Run upload.py
       run: |
-        python Algorithm/upload.py  # upload.py가 Algorithm 폴더 안에 있기 때문에 경로를 이렇게 수정
+        python /upload.py  # upload.py가 Algorithm 폴더 안에 있기 때문에 경로를 이렇게 수정
 
     - name: Commit changes
       run: |
